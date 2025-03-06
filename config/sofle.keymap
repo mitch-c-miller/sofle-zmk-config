@@ -54,23 +54,23 @@
 &trans &trans &trans &trans    &trans &trans                     &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans    &trans &trans                     &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans    &trans &trans                     &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans    &trans &trans &tog WIN     &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans    &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans
               &trans &kp LCTRL &trans &trans &mt LGUI RET &trans &trans &trans &trans &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp END HOME &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp LG(RIGHT) LG(LEFT) &inc_dec_kp PG_DN PG_UP>;
         };
 
         symbol_layer {
             display-name = "symbol";
 // TODO: Some binds are waiting for shifted keycode support.
-// ------------------------------------------------------------------------------------------------------
-// | F11 | F1 | F2 | F3 | F4 | F5  |                 |      |  7  |  8  |  9  |  /  |      |
-// | F12 | F6 | F7 | F8 | F9 | F10 |                 |      |  4  |  5  |  6  |  *  |      |
-// | DEL |  ~ | +  | {  |  } |  |  |                 |      |  1  |  2  |  3  |  -  |      |
-// |     |  ` | =  | [  |  ] |  \  |       |  |      |      |     |  0  |  .  |  +  |      |
-//            |    |    |    |     |       |  |      |      |     |     |     |
-// -----------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
+// | F11 | F1 | F2 | F3 | F4 | F5  |                |      |  7  |  8  |  9  |  /  |      |
+// | F12 | F6 | F7 | F8 | F9 | F10 |                |      |  4  |  5  |  6  |  *  |      |
+// | DEL |  ~ | +  | {  |  } |  |  |                |      |  1  |  2  |  3  |  -  |      |
+// |     |  ` | =  | [  |  ] |  \  |      |  |      |      |     |  0  |  .  |  +  |      |
+//            |    |    |    |     |      |  |      |      |     |     |     |
+// ----------------------------------------------------------------------------------------
             bindings = <
 &kp F11 &kp F1    &kp F2    &kp F3   &kp F4   &kp F5                               &none  &kp N7 &kp N8 &kp N9  &kp FSLH  &none
 &kp F12 &kp F6    &kp F7    &kp F8   &kp F9   &kp F10                              &none  &kp N4 &kp N5 &kp N6  &kp STAR  &none
