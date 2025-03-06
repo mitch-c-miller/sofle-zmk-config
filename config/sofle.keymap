@@ -18,17 +18,6 @@
 #define SYSTEM 3
 
 / {
-    behaviors {
-        cmt: cmt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,16 +26,16 @@
 // ------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |   4    |  5     |                      |  6   |  7    |  8    |   9   |  0  | BSLH  |
 // |  TAB  |  Q  |  W  |  E   |   R    |  T     |                      |  Y   |  U    |  I    |   O   |  P  | MINUS |
-// | BKSPC |  A  |  S  |  D   |   F    |  G     |                      |  H   |  J    |  K    |   L   |  ;  |   '   |
+// |  BSPC |  A  |  S  |  D   |   F    |  G     |                      |  H   |  J    |  K    |   L   |  ;  |   '   |
 // | SHIFT |  Z  |  X  |  C   |   V    |  B     |   MACOS   |  |       |  N   |  M    |  ,    |   .   |  /  | SHIFT |
 //               | ALT | LGUI | SYSTEM | SYMBOL | LCTRL RET |  | SPACE | LEFT | DOWN  |  UP   | RIGHT |
 // ------------------------------------------------------------------------------------------------------------------
             bindings = <
-&kp ESC         &kp N1 &kp N2   &kp N3   &kp N4     &kp N5                              &kp N6   &kp N7   &kp N8    &kp N9   &kp N0   &kp BSLH
-&kp TAB         &kp Q  &kp W    &kp E    &kp R      &kp T                               &kp Y    &kp U    &kp I     &kp O    &kp P    &kp MINUS
-&kp BKSPC       &kp A  &kp S    &kp D    &kp F      &kp G                               &kp H    &kp J    &kp K     &kp L    &kp SEMI &kp SQT
-&cmt LSHFT LPAR &kp Z  &kp X    &kp C    &kp V      &kp B      &tog MACOS     &none     &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH &cmt RSHFT RPAR
-                       &kp LALT &kp LGUI &mo SYSTEM &mo SYMBOL &cmt LCTRL RET &kp SPACE &kp LEFT &kp DOWN &kp UP    &kp RIGHT
+&kp ESC        &kp N1 &kp N2   &kp N3   &kp N4     &kp N5                             &kp N6   &kp N7   &kp N8    &kp N9   &kp N0   &kp BSLH
+&kp TAB        &kp Q  &kp W    &kp E    &kp R      &kp T                              &kp Y    &kp U    &kp I     &kp O    &kp P    &kp MINUS
+&kp BSPC       &kp A  &kp S    &kp D    &kp F      &kp G                              &kp H    &kp J    &kp K     &kp L    &kp SEMI &kp SQT
+&mt LSHFT LPAR &kp Z  &kp X    &kp C    &kp V      &kp B      &tog MACOS     &none    &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH &mt RSHFT RPAR
+                      &kp LALT &kp LGUI &mo SYSTEM &mo SYMBOL &mt LCTRL RET &kp SPACE &kp LEFT &kp DOWN &kp UP    &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp END HOME &inc_dec_kp PG_DN PG_UP>;
@@ -62,11 +51,11 @@
 // -----------------------------------------------------------------------------------------------------------
             display-name = "macos";
             bindings = <
-&trans &trans &trans &trans    &trans &trans                      &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans    &trans &trans                      &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans    &trans &trans                      &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans    &trans &trans &tog WIN      &trans &trans &trans &trans &trans &trans &trans
-              &trans &kp LCTRL &trans &trans &cmt LGUI RET &trans &trans &trans &trans &trans
+&trans &trans &trans &trans    &trans &trans                     &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans    &trans &trans                     &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans    &trans &trans                     &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans    &trans &trans &tog WIN     &trans &trans &trans &trans &trans &trans &trans
+              &trans &kp LCTRL &trans &trans &mt LGUI RET &trans &trans &trans &trans &trans
             >;
 
             sensor-bindings = <&inc_dec_kp END HOME &inc_dec_kp PG_DN PG_UP>;
