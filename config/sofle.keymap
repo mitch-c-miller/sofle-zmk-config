@@ -14,7 +14,7 @@
 // layer definitions
 #define WIN 0
 #define MACOS 1
-#define SYMBOLS 2
+#define SYMBOL 2
 #define SYSTEM 3
 
 / {
