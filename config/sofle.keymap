@@ -34,7 +34,7 @@
 &kp ESC          &kp N1 &kp N2   &kp N3   &kp N4     &kp N5                             &kp N6   &kp N7   &kp N8    &kp N9   &kp N0   &kp BSLH
 &kp TAB          &kp Q  &kp W    &kp E    &kp R      &kp T                              &kp Y    &kp U    &kp I     &kp O    &kp P    &kp MINUS
 &kp BKSPC        &kp A  &kp S    &kp D    &kp F      &kp G                              &kp H    &kp J    &kp K     &kp L    &kp SEMI &kp SQT
-&mt LSHFT LS(N9) &kp Z  &kp X    &kp C    &kp V      &kp B      &tog MACOS    &none     &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT RS(N0)
+&mt LSHFT LS(N9) &kp Z  &kp X    &kp C    &kp V      &kp B      &tog MACOS    &none     &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH &mt RSHFT RS(N0)
                         &kp LALT &kp LGUI &mo SYSTEM &mo SYMBOL &mt LCTRL RET &kp SPACE &kp LEFT &kp DOWN &kp UP    &kp RIGHT
             >;
 
